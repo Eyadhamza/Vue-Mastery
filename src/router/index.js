@@ -19,7 +19,7 @@ const routes = [
     }
   },
   {
-    path: '/event/:id',
+    path: '/events/:id',
     name: 'Layout',
     props: true,
     component: Layout,
@@ -42,6 +42,13 @@ const routes = [
       ]
   },
 
+  {
+    // redirect any url with event/anything to => events!
+    path : '/event/:afterEvent(.*)',
+    redirect: to => {
+      return {path: '/events/' + to.params.afterEvent }
+    }
+  },
   {
     path: '/about',
     name: 'About',
