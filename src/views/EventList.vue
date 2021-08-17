@@ -2,12 +2,29 @@
   <h1>Events for Good</h1>
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
+
+    <router-link
+      :to="{name:'EventList',
+      query: {page:page - 1}}"
+      rel="prev"
+      v-if="page !== 1"
+    >Prev Page
+    </router-link>
+    <router-link
+      :to="{name:'EventList',
+      query: {page:page + 1}}"
+      rel="next"
+      v-if="hasNextPage"
+    >Next page
+    </router-link>
   </div>
 </template>
 
 <script>
 import EventCard from '@/components/EventCard.vue'
 import EventService from '../services/EventService'
+import {watchEffect} from 'vue'
+
 export default {
   name: 'EventList',
   props:['page'],
@@ -16,17 +33,30 @@ export default {
   },
   data () {
     return {
-      events: null
+      events: null,
+      totalEvents:0
     }
   },
   created () {
-    EventService.getEvents(2,this.page)
-      .then(response => {
-        this.events = response.data
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    watchEffect(() =>{
+        this.events = null
+        EventService.getEvents(2,this.page)
+          .then(response => {
+            this.events = response.data
+            this.totalEvents = response.headers['x-total-count']
+          })
+          .catch(error => {
+            console.log(error)
+          })
+    })
+  },
+  computed:{
+    hasNextPage(){
+      var totalPages = Math.ceil(this.totalEvents / 2)
+
+      // if this page is not the last page!
+      return this.page < totalPages
+    }
   }
 }
 </script>
