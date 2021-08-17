@@ -10,6 +10,7 @@ import { Options, Vue } from "vue-class-component";
 import EventCard from "@/components/EventCard.vue";
 import EventService from "@/services/EventService";
 @Options({
+    props:['page'],
   components: {
     EventCard,
   },
@@ -19,7 +20,7 @@ import EventService from "@/services/EventService";
     };
   },
   created() {
-    EventService.getEvents()
+    EventService.getEvents(2,this.page)
       .then((response) => {
         this.events = response.data;
       })

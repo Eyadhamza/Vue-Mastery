@@ -4,9 +4,10 @@ import About from "../views/About.vue";
 import EventDetails from "@/views/EventDetails.vue";
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    name: "EventList",
-    component: EventList,
+      path: "/",
+      name: "EventList",
+      component: EventList,
+          props: route => ({page:route.query.page || 1})
   },
   {
     path: "/about",
