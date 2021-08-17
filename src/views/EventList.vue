@@ -1,7 +1,7 @@
 <template>
   <h1>Events for Good</h1>
   <div class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event" />
+    <EventCard v-for="event in events" :key="event.id" :event="event"  />
 
     <router-link
       :to="{name:'EventList',
@@ -27,7 +27,7 @@ import {watchEffect} from 'vue'
 
 export default {
   name: 'EventList',
-  props:['page'],
+  props:['page','perPage'],
   components: {
     EventCard
   },
@@ -40,7 +40,7 @@ export default {
   created () {
     watchEffect(() =>{
         this.events = null
-        EventService.getEvents(2,this.page)
+        EventService.getEvents(this.perPage ?? 2,this.page)
           .then(response => {
             this.events = response.data
             this.totalEvents = response.headers['x-total-count']
@@ -52,7 +52,7 @@ export default {
   },
   computed:{
     hasNextPage(){
-      var totalPages = Math.ceil(this.totalEvents / 2)
+      let totalPages = Math.ceil(this.totalEvents / this.perPage)
 
       // if this page is not the last page!
       return this.page < totalPages
