@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import EventService from './services/EventService'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -23,8 +23,23 @@ export default new Vuex.Store({
       {'id':4,'name':'Beyond Earth 33'},
     ]
   },
-  mutations: {},
-  actions: {},
+  mutations: {
+      ADD_EVENT(state,event){
+        state.events.push(event)
+
+      }
+  },
+  actions: {
+      createEvent({commit},event){
+          return EventService.postEvent(event).then(() => {
+            commit('ADD_EVENT',event)
+          })
+            .catch(() => {
+            console.log('there was an error')
+          })
+
+      }
+  },
   getters:{
     catLength: state => {
       return state.categories.length

@@ -71,6 +71,24 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 1878999,
+      "user": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "category": "asdasd",
+      "organizer": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "title": "ads",
+      "description": "asd",
+      "location": "asd",
+      "date": "2021-08-04T12:20:00.000Z",
+      "time": "14:00",
+      "attendees": []
     }
   ]
 }
