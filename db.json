@@ -48,6 +48,107 @@
         }
       ]
     },
+      {
+          "id": 2,
+          "title": "Park Cleanup",
+          "date": "Nov 12 2018",
+          "time": "12:00",
+          "location": "132 N Magnolia Street, Orlando, Florida",
+          "description": "We're going to clean up this park.",
+          "organizer": "Adam Jahr",
+          "category": "nature",
+          "attendees": [
+              {
+                  "id": "ghi789",
+                  "name": "Beth Swanson"
+              },
+              {
+                  "id": "jkl101",
+                  "name": "Mary Gordon"
+              }
+          ]
+      },
+      {
+          "id": 2,
+          "title": "Park Cleanup",
+          "date": "Nov 12 2018",
+          "time": "12:00",
+          "location": "132 N Magnolia Street, Orlando, Florida",
+          "description": "We're going to clean up this park.",
+          "organizer": "Adam Jahr",
+          "category": "nature",
+          "attendees": [
+              {
+                  "id": "ghi789",
+                  "name": "Beth Swanson"
+              },
+              {
+                  "id": "jkl101",
+                  "name": "Mary Gordon"
+              }
+          ]
+      },
+      {
+          "id": 2,
+          "title": "Park Cleanup",
+          "date": "Nov 12 2018",
+          "time": "12:00",
+          "location": "132 N Magnolia Street, Orlando, Florida",
+          "description": "We're going to clean up this park.",
+          "organizer": "Adam Jahr",
+          "category": "nature",
+          "attendees": [
+              {
+                  "id": "ghi789",
+                  "name": "Beth Swanson"
+              },
+              {
+                  "id": "jkl101",
+                  "name": "Mary Gordon"
+              }
+          ]
+      },
+      {
+          "id": 2,
+          "title": "Park Cleanup",
+          "date": "Nov 12 2018",
+          "time": "12:00",
+          "location": "132 N Magnolia Street, Orlando, Florida",
+          "description": "We're going to clean up this park.",
+          "organizer": "Adam Jahr",
+          "category": "nature",
+          "attendees": [
+              {
+                  "id": "ghi789",
+                  "name": "Beth Swanson"
+              },
+              {
+                  "id": "jkl101",
+                  "name": "Mary Gordon"
+              }
+          ]
+      },
+      {
+          "id": 2,
+          "title": "Park Cleanup",
+          "date": "Nov 12 2018",
+          "time": "12:00",
+          "location": "132 N Magnolia Street, Orlando, Florida",
+          "description": "We're going to clean up this park.",
+          "organizer": "Adam Jahr",
+          "category": "nature",
+          "attendees": [
+              {
+                  "id": "ghi789",
+                  "name": "Beth Swanson"
+              },
+              {
+                  "id": "jkl101",
+                  "name": "Mary Gordon"
+              }
+          ]
+      },
+
     {
       "id": 3,
       "title": "Pet Adoption Day",
