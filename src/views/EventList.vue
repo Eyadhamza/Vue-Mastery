@@ -1,70 +1,31 @@
 <template>
-  <h1>Events for Good</h1>
-  <div class="events">
-    <EventCard v-for="event in events" :key="event.id" :event="event"  />
-
-    <router-link
-      :to="{name:'EventList',
-      query: {page:page - 1}}"
-      rel="prev"
-      v-if="page !== 1"
-    >Prev Page
-    </router-link>
-    <router-link
-      :to="{name:'EventList',
-      query: {page:page + 1}}"
-      rel="next"
-      v-if="hasNextPage"
-    >Next page
-    </router-link>
+  <div>
+    <h1>Events Listing</h1>
+    <EventCard v-for="event in events" :key="event.id" :event="event"/>
   </div>
 </template>
 
 <script>
 import EventCard from '@/components/EventCard.vue'
-import EventService from '../services/EventService'
-import {watchEffect} from 'vue'
+import EventService from '@/services/EventService.js'
 
 export default {
-  name: 'EventList',
-  props:['page','perPage'],
   components: {
     EventCard
   },
-  data () {
+  data() {
     return {
-      events: null,
-      totalEvents:0
+      events: []
     }
   },
-  created () {
-    watchEffect(() =>{
-        this.events = null
-        EventService.getEvents(this.perPage ?? 2,this.page)
-          .then(response => {
-            this.events = response.data
-            this.totalEvents = response.headers['x-total-count']
-          })
-          .catch(error => {
-            console.log(error)
-          })
-    })
-  },
-  computed:{
-    hasNextPage(){
-      let totalPages = Math.ceil(this.totalEvents / this.perPage)
-
-      // if this page is not the last page!
-      return this.page < totalPages
-    }
+  created() {
+    EventService.getEvents()
+      .then(response => {
+        this.events = response.data
+      })
+      .catch(error => {
+        console.log('There was an error:', error.response)
+      })
   }
 }
 </script>
-
-<style scoped>
-.events {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-</style>
