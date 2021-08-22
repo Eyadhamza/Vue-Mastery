@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Events Listing</h1>
-    <EventCard v-for="event in events" :key="event.id" :event="event"/>
+    <h1>Events Listing For {{user.user.name}}</h1>
+    <EventCard v-for="event in event.events" :key="event.id" :event="event"/>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
     page(){
       return parseInt(this.$route.query.page) || 1
     },
-    ...mapState(['events'])
+    ...mapState(['event','user'])
   }
 }
 </script>
