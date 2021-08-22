@@ -48,107 +48,106 @@
         }
       ]
     },
-      {
-          "id": 2,
-          "title": "Park Cleanup",
-          "date": "Nov 12 2018",
-          "time": "12:00",
-          "location": "132 N Magnolia Street, Orlando, Florida",
-          "description": "We're going to clean up this park.",
-          "organizer": "Adam Jahr",
-          "category": "nature",
-          "attendees": [
-              {
-                  "id": "ghi789",
-                  "name": "Beth Swanson"
-              },
-              {
-                  "id": "jkl101",
-                  "name": "Mary Gordon"
-              }
-          ]
-      },
-      {
-          "id": 2,
-          "title": "Park Cleanup",
-          "date": "Nov 12 2018",
-          "time": "12:00",
-          "location": "132 N Magnolia Street, Orlando, Florida",
-          "description": "We're going to clean up this park.",
-          "organizer": "Adam Jahr",
-          "category": "nature",
-          "attendees": [
-              {
-                  "id": "ghi789",
-                  "name": "Beth Swanson"
-              },
-              {
-                  "id": "jkl101",
-                  "name": "Mary Gordon"
-              }
-          ]
-      },
-      {
-          "id": 2,
-          "title": "Park Cleanup",
-          "date": "Nov 12 2018",
-          "time": "12:00",
-          "location": "132 N Magnolia Street, Orlando, Florida",
-          "description": "We're going to clean up this park.",
-          "organizer": "Adam Jahr",
-          "category": "nature",
-          "attendees": [
-              {
-                  "id": "ghi789",
-                  "name": "Beth Swanson"
-              },
-              {
-                  "id": "jkl101",
-                  "name": "Mary Gordon"
-              }
-          ]
-      },
-      {
-          "id": 2,
-          "title": "Park Cleanup",
-          "date": "Nov 12 2018",
-          "time": "12:00",
-          "location": "132 N Magnolia Street, Orlando, Florida",
-          "description": "We're going to clean up this park.",
-          "organizer": "Adam Jahr",
-          "category": "nature",
-          "attendees": [
-              {
-                  "id": "ghi789",
-                  "name": "Beth Swanson"
-              },
-              {
-                  "id": "jkl101",
-                  "name": "Mary Gordon"
-              }
-          ]
-      },
-      {
-          "id": 2,
-          "title": "Park Cleanup",
-          "date": "Nov 12 2018",
-          "time": "12:00",
-          "location": "132 N Magnolia Street, Orlando, Florida",
-          "description": "We're going to clean up this park.",
-          "organizer": "Adam Jahr",
-          "category": "nature",
-          "attendees": [
-              {
-                  "id": "ghi789",
-                  "name": "Beth Swanson"
-              },
-              {
-                  "id": "jkl101",
-                  "name": "Mary Gordon"
-              }
-          ]
-      },
-
+    {
+      "id": 2,
+      "title": "Park Cleanup",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Park Cleanup",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Park Cleanup",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Park Cleanup",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Park Cleanup",
+      "date": "Nov 12 2018",
+      "time": "12:00",
+      "location": "132 N Magnolia Street, Orlando, Florida",
+      "description": "We're going to clean up this park.",
+      "organizer": "Adam Jahr",
+      "category": "nature",
+      "attendees": [
+        {
+          "id": "ghi789",
+          "name": "Beth Swanson"
+        },
+        {
+          "id": "jkl101",
+          "name": "Mary Gordon"
+        }
+      ]
+    },
     {
       "id": 3,
       "title": "Pet Adoption Day",
@@ -189,6 +188,96 @@
       "location": "asd",
       "date": "2021-08-04T12:20:00.000Z",
       "time": "14:00",
+      "attendees": []
+    },
+    {
+      "id": 342137,
+      "user": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "category": "asdasd",
+      "organizer": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "title": "asasdsd",
+      "description": "asdasd",
+      "location": "dasd",
+      "date": "2021-06-03T00:39:00.000Z",
+      "time": "4:00",
+      "attendees": []
+    },
+    {
+      "id": 8247847,
+      "user": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "category": "asdasd",
+      "organizer": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "title": "ad",
+      "description": "asd",
+      "location": "asd",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 6477907,
+      "user": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "category": "asda sda sd",
+      "organizer": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "title": "asd",
+      "description": "asd",
+      "location": "asd",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 9843463,
+      "user": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "category": "asdasd",
+      "organizer": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "title": "asd",
+      "description": "asd",
+      "location": "asd",
+      "date": "",
+      "time": "",
+      "attendees": []
+    },
+    {
+      "id": 4243523,
+      "user": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "category": "",
+      "organizer": {
+        "id": 1234,
+        "name": "Eyad Hamza"
+      },
+      "title": "asdas",
+      "description": "dasdasd",
+      "location": "asdasd",
+      "date": "2021-08-03T01:22:00.000Z",
+      "time": "",
       "attendees": []
     }
   ]
